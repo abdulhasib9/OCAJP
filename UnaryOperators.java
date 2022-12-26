@@ -23,7 +23,44 @@ public class UnaryOperators {
          System.out.println("a = "+a + " b = "+b);
 
         // int myint = !5 ; //this code does not compile
+
         //! operator can not applied to integers
         
+        //example 3
+        // increment and decrement has higher order than (=,-,/,*)
+        int newInt =5;
+        int newOtherInt = newInt++; // this first assign the newInt value to newOtherInt and then it increment newInt by 1
+        System.out.println("newInt = "+newInt +" newOtherInt = "+newOtherInt);
+
+        //example4
+        double newDouble =0;
+        System.out.println( " newDouble = "+newDouble);
+        System.out.println("newDouble after increment = "+ ++newDouble);//1
+        System.out.println("agian newDouble = " + newDouble);//1
+        System.out.println("decrement the new Double "+newDouble --);//1
+        System.out.println( " newDouble = "+newDouble);//0
+
+        /*
+         * EXAM DEMO QUESTIONS
+         * 
+         * 1: What is the output of e and f?
+         * double e =3;
+         * double f = ++e * 5 / e-- + --e;
+         * 
+         * Answer: e =2 and f=7.
+         * Explaination:
+         * e=3;
+         * f = ++e * 5 / e-- + --e;
+         * f = 4 * 5 /e-- + --e;
+         * f = 20 / 4 +2;
+         * f = 5+2;
+         * f=7;
+         * e=2;
+         * 
+         * 
+         *
+         * 
+         */
+
     }
 }
