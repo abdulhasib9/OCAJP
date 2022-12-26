@@ -26,6 +26,50 @@ public class NumericPromotion{
          */
 
         System.out.println("Result = "+result);
+
+        System.out.println("============ Casting =============");
+        //casting is converting bigger types to smaller types
+        //example 1
+        double cast1 = 22.5;
+        int resultCast = 5+ (int) cast1;
+        System.out.println("the casting result := "+resultCast);
+
+        //example 2
+        int anotherCast = 23;
+        byte byteCast = 120;
+        int anotherCastResult = anotherCast +byteCast;
+        /*
+         * the statment below prints - value because 
+         * buffer over flow happens
+         * because the byte data type can not hold than 127 (0-127)
+         */
+        int anotherByteCastResult = (byte) anotherCast +byteCast;
+        System.out.println("int reslut =  "+anotherCastResult);
+        System.out.println("Byte Result = "+anotherByteCastResult);
+        
+        //Some of the exam practice Questions
+        /*
+         * 1: What is the data type of x+y?
+         * double x = 44.25;
+         * float y = 3.35;
+         * 
+         * Answer: the code does not compile because there is no letter (f)
+         * after the variable y litteral
+         * 
+         * 2: What is the data type of x/y?
+         * short x=14;
+         * short y=6;
+         *
+         * Answer: the data type of x / y is int because short is promoted into int 
+         * and the result will be int
+         * 
+         * 3: What is the data type of x*y/z?
+         * short x=14;
+         * float y=12.4f;
+         * double z =30;
+         * 
+         * Answer: the result of x*y/z will be the double becaues the smaller type is promoted to larger
+         */
     
 
     }
