@@ -1,2 +1,2 @@
-package PACKAGE_NAME;public class ArraysDemo {
+public class ArraysDemo {
 }
