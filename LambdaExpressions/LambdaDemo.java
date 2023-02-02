@@ -2,7 +2,8 @@ package LambdaExpressions;
 
 public class LambdaDemo {
     public static void main(String[] args) {
-     //   greet(new ConsolePrinter());
+       greet(new ConsolePrinter());
+
 
         //printing the same message using anonymous inner classes
         greet(new Printer() {
@@ -11,6 +12,9 @@ public class LambdaDemo {
                 System.out.println(message);
             }
         });
+
+        //printing the message using lambda expression
+        greet(message -> System.out.println(message));
     }
     public static void greet(Printer printer){
         printer.print("Hello world");
